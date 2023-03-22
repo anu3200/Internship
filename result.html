@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR Prediction Result</title>
+    
+  <style>
+  h2 {
+  text-align: center;
+}
+ body {
+   background-position: center;
+   background-repeat: repeat;
+   background-size: cover;
+  }     
+        
+  </style>
+      <link rel='stylesheet' href='/static/css/style.css'>
+</head>
+        <div class="topnav">
+              <a class="active" href="{{url_for('home')}}" target="_blank">Home</a>
+              <a href="{{url_for('index')}}" target="_blank" class='active'>Index</a>
+              
+
+        </div>
+<br>
+<body background="/static/images/background1.jpg">
+<script>
+console.log('its result page');   
+</script>    
+    <h2 id="result">
+       "Congrats!!...You are eligible for a Salary {{prediction_text}}
+    </h2>
+         
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HR Salary Prediction</title>
+    <style>
+    h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+div {
+  text-align: center;
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        text-align:right ;
+      }
+
+    </style>
+            <link rel='stylesheet' href='/static/css/style.css'>
+</head>
+
+        <div class="topnav">
+              <a class="active" href="{{url_for('home')}}" target="_blank">Home</a>
+              <a href="#index"  class='active'>Index</a>
+              
+
+        </div>
+<body background="/static/images/background1.jpg">
+<h1><b>HR Salary Dashboard - Train the Dataset and Predict Salary </b></h1>
+     <!-- Input form -->
+<div class = "input form">
+  <form action="{{url_for('predict')}}" method='post' id="input head">
+     <h3 style='color: black'>Please enter the details</h3>
+     <br><label for="age">Age</label>
+     <input type="text" name="age" placeholder="age">
+     </br> 
+     <br><label for="Work Class">Workclass</label>
+     <input type="text" name="workclass" placeholder="workclass">
+     </br>
+     <br><label for="education">Education</label>
+     <input type="text" name="education" placeholder="education">    
+     </br>
+    
+     <br><label for="maritalstatus">Marital Status</label>
+     <input type="text" name="maritalstatus" placeholder="marital-status">
+     </br>
+     
+     <br><label for="occupation">Occupation</label>
+     <input type="text" name="occupation" placeholder="occupation">    
+     </br>
+     <br><label for="relationship">Relationship</label>
+     <input type="text" name="relationship" placeholder="relationship">
+     </br>
+     <br><label for="race">Race</label>
+     <input type="text" name="race" placeholder="race">
+     </br>    
+     
+     <br><label for="Gender">Sex</label>
+     <input type="text" name="sex" placeholder="gender">    
+     </br>
+     
+        
+     
+     <br><label for="hoursperweek">Hours per Week</label>
+     <input type="text" name="hoursperweek" placeholder="hours-per-week">    
+     </br>
+     <br><label for="nativecountry">Native Country</label>
+     <input type="text" name="nativecountry" placeholder="native-country">
+     </br>
+        
+     <br><button type="submit" name="answer">Submit</button></br>
+  </form>
+
+</div>
+
+</body>
+</html>
